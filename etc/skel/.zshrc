@@ -481,3 +481,6 @@ alias pamac-unlock="sudo rm /var/tmp/pamac/dbs/db.lock"
 #in there. They will not be overwritten by skel.
 
 [[ -f ~/.zshrc-personal ]] && . ~/.zshrc-personal
+
+# reporting tools - leave this in for ATT
+#fastfetch
