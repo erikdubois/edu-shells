@@ -25,7 +25,7 @@ tput sgr0
 echo
 
 echo "We assume you have installed these packages"
-echo "sudo pacman -S fish arcolinux-fish-git"
+echo "sudo pacman -S fish edu-shells-git"
 echo
 echo "We assume you are now on fish and have omf installed"
 echo
