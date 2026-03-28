@@ -44,14 +44,6 @@ function reload
     echo "reloading: $config"
 end
 
-if test -d $HOME/.bin
-    fish_add_path -U $HOME/.bin
-end
-
-if test -d $HOME/.local/bin
-    fish_add_path -U $HOME/.local/bin
-end
-
 # Starship prompt
 #if command -sq starship
 #    starship init fish | source
@@ -77,15 +69,6 @@ set -x FZF_DEFAULT_OPTS "--color=16,header:13,info:5,pointer:3,marker:9,spinner:
 set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
 set -x MANROFFOPT "-c"
 set -g theme_nerd_fonts yes
-
-
-if status --is-login
-    set -gx PATH $PATH ~/.bin
-end
-
-if status --is-login
-    set -gx PATH $PATH ~/.local/bin
-end
 
 if type -q bat
     alias cat="bat --paging=never"
