@@ -44,9 +44,13 @@ function reload
     echo "reloading: $config"
 end
 
-# User paths
-set -e fish_user_paths
-set -U fish_user_paths $HOME/.bin $HOME/.local/bin $HOME/Applications $fish_user_paths
+if test -d $HOME/.bin
+    fish_add_path -U $HOME/.bin
+end
+
+if test -d $HOME/.local/bin
+    fish_add_path -U $HOME/.local/bin
+end
 
 # Starship prompt
 #if command -sq starship
