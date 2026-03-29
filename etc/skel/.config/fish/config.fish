@@ -218,6 +218,7 @@ alias updqte="sudo pacman -Syyu"
 alias upqll="paru -Syu --noconfirm"
 alias upal="paru -Syu --noconfirm"
 alias u="sudo pacman -Syyu"
+alias up="./up.sh"
 
 ## Colorize the grep command output for ease of use (good for log files)##
 alias grep="grep --color=auto"
